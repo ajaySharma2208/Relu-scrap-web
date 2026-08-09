@@ -18,7 +18,7 @@ async function runTest() {
     console.warn('The pipeline will run with a mock fallback return values for Gemini insights.\n');
   }
 
-  const testUrl = 'https://openai.com';
+  const testUrl = 'https://microsoft.com';
   
   try {
     const result = await scrapeWebsite(testUrl);

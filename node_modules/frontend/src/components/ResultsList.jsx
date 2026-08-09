@@ -183,7 +183,7 @@ export function ResultsList({ companies = [], onDeleteCompany, onRefresh }) {
         <div className="header-actions">
           <button 
             onClick={handleRefresh} 
-            className="btn-action-neutral"
+            className="btn-action-outline"
             disabled={isRefreshing}
           >
             <RefreshCw size={14} className={isRefreshing ? 'animate-spin' : ''} />
@@ -191,7 +191,7 @@ export function ResultsList({ companies = [], onDeleteCompany, onRefresh }) {
           </button>
           <button 
             onClick={handleExportAllJson} 
-            className="btn-action-primary"
+            className="btn-primary"
             disabled={companies.length === 0}
           >
             <Download size={14} />
@@ -264,7 +264,7 @@ export function ResultsList({ companies = [], onDeleteCompany, onRefresh }) {
               <p>Try modifying your search queries, applying different filters, or enrich a new domain URL.</p>
               <button 
                 onClick={() => navigate('/enrich')}
-                className="btn-action-primary mt-4"
+                className="btn-primary mt-4"
               >
                 <Plus size={16} />
                 <span>Enrich New Company</span>
