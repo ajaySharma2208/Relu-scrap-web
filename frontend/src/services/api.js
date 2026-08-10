@@ -73,7 +73,7 @@ import axios from 'axios';
 
 let apiBaseUrl =
   import.meta.env.VITE_API_URL ||
-  'https://relu-scrap-web-5.onrender.com';
+  'http://localhost:5000';
 
 if (apiBaseUrl.endsWith('/')) {
   apiBaseUrl = apiBaseUrl.slice(0, -1);
